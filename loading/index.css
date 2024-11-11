@@ -1,0 +1,29 @@
+body { background-color: #F8F0E3; }
+.square-animation {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 10px solid #4E7CFF;
+  border-radius: 4px;
+  box-shadow: 0 0 18px #4E7CFF, 0 0 18px #4E7CFF inset;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 10;
+  animation: 3s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+  0%{
+    transform: rotateX(0);
+  }
+  33% {
+    transform: rotateX(180deg) rotateY(0);
+  }
+  67% {
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+  }
+  100%{
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+}
