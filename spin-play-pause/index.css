@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: local("PoppinsBold"), local("Poppins Bold"), url("../assets/fonts/Poppins-Bold.ttf");
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  /* how to center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+  background-color: #4E7CFF;
+  color: white;
+  font-size: 4em;
+  font-family: 'Poppins Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3s spin ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  0%{
+    scale: 0;
+  }
+  50%{
+    scale: 1;
+    transform: rotate(0);
+    border-radius: 0;
+  }
+  100%{
+    scale: 1;
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins Bold", sans-serif;
+  padding: 10px 1em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.play-button {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.pause-button {
+  background-color: red;
+  border: 1px solid red;
+}
