@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "src": "./loading", "dest": "./loading/index.html" },
+    { "src": "./spin-play-pause", "dest": "./spin-play-pause/index.html" }
+  ]
+}

@@ -3,9 +3,9 @@ body { background-color: #F8F0E3; }
   width: 100px;
   height: 100px;
   background-color: transparent;
-  border: 10px solid #4E7CFF;
+  border: 10px solid aqua;
   border-radius: 4px;
-  box-shadow: 0 0 18px #4E7CFF, 0 0 18px #4E7CFF inset;
+  box-shadow: 0 0 18px aqua, 0 0 18px aqua inset;
   position: absolute;
   top: 40%;
   left: 50%;
